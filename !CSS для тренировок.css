@@ -1,0 +1,36 @@
+.Welcome-photo {
+    background-image: url("images/index-background.jpg");
+    width: 1200px;
+    height: 485px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+
+}
+
+td {
+    padding: 5px;
+    border: 1px solid lightgray;
+    color: brown;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+th {
+    padding: 10px;
+    border: 1px solid darkslategray;
+    border-bottom: 3px solid black;
+    color: blue;
+    background-color: lightcyan;
+}
+
+caption {
+    caption-side: bottom;
+    text-align: left;
+}
+
+.sankt td:nth-child(2) {
+    background: darkslategray;
+}

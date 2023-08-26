@@ -92,15 +92,34 @@
         </section>
 
         <section class="look-for-hotel">
-            <h2>Поиск гостиницы в Седоне</h2>
-            <ul>
-                <li>Дата заезда <input type="data"></li>
-                <li>Дата выезда <input type="data"></li>
-                <li>Взрослые <input type="figure"></li>
-                <li>Дети <input type="figure"></li>
-            </ul>
-            <button href="#">Найти</button>
+            <h2><button>Поиск гостиницы в Седоне</button></h2>
+            <form action="https://echo.htmlacademy.ru">
+                <lable for="data-of-arrival">Дата заезда:</lable>
+                <input type="date" name="data-of-arrival">
+                <br><br>
+                <lable for="data-of-departure">Дата выезда:</lable>
+                <input type="date" name="data-of-departure">
+                <br><br>
+                <label for="amount-of-adults">Взрослые:</label>
+                <input type="number" name="amount-of-adults" id="amount-of-adults"
+                       min="1" max="20" step="1" value="1">
+                <label for="amount-of-children">Дети:</label>
+                <input type="number" name="amount-of-children" id="amount-of-children"
+                       min="1" max="20" step="1" value="1">
+                <br><br>
+                <button type="submit">Найти</button>
+            </form>
         </section>
+
+        <section class="modal modal-map"> <!--Карта-адрес-->
+            <h2 class="visual-hidden">Как до нас добраться</h2>
+            <p>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69735c04ee2f1c58d2d7b873a65336cf736d800da2403b8edf5761530be303bb&source=constructor"
+                        style="border: 0;" width="1200" height="593" title="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона"></iframe>
+            </p>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
     </main>
 
     <footer>

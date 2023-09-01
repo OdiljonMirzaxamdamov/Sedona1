@@ -4,95 +4,115 @@
     <meta charset="UTF-8">
     <title>Sedona</title>
     <meta name="keywords" content="туризм, город, гостиницы">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="Stylesheet.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="info.html">Информация</a></li>
+        <nav class="main-navigation">
+            <ul class="site-navigation left">
+                <li class="info"><a href="info.html">Информация</a></li>
                 <li><a href="gallery.html">Фото и видео</a></li>
-                <li><img src="images/header/favicon.png" width="32" height="32" alt="Герб Седона"></li>
+            </ul>
+            <a class="navigation-logo" href="Index.html">
+                <img src="images/header/logo.svg" width="138" height="70" alt="Герб Седона">
+            </a>
+            <ul class="site-navigation right">
                 <li><a href="map.html">Карта штата</a></li>
-                <li><a href="Hotels.html">Гостиницы</a></li>
+                <li class="hotels"><a href="Hotels.html">Гостиницы</a></li>
             </ul>
         </nav>
-        <div class="Welcome-photo">
+        <div class="welcome-photo">
             <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         </div>
     </header>
 
     <main>
-        <h2>Седона - небольшой городок в аризоне,
-        заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="promo">
+            <h2 class="promo-title">Седона - небольшой городок в аризоне,<br>
+            заслуживающий большего!</h2>
+            <p class="promo-remark">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
 
-        <section class="advantages#1">
-            <div>
-            <h3>Настоящий городок</h3>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <section class="advantages-1">
+            <div class="advantages-1-title">
+                <h3>Настоящий городок</h3>
+                <p class="advantages-1-p">- №1 -</p>
+                <p class="advantages-1-p">Седона - не аттракцион для туристов, <br>
+                    там течет своя жизнь</p>
             </div>
-            <img src="images/photo-1.jpg" width="80" height="38" alt="Фото города">
+            <div>
+                <img src="images/photo-1.jpg" width="800" height="256" alt="Фото города">
+            </div>
         </section>
 
         <section class="advantages#2">
-            <ul>
+            <ul class="advantages-2">
                 <li>
-                    <h3>Жилье</h3>
-                    <p>Рекомендуем пожить в настоящем моетеле, все как в кино!</p>
                     <img src="images/house.svg" width="76" height="72" alt="Эмблема дома">
+                    <h3 class="advantages-2-title">Жилье</h3>
+                    <p class="advantages-2-p">Рекомендуем пожить в настоящем <br>
+                        моетеле, все как в кино!</p>
                 </li>
                 <li>
-                    <h3>Еда</h3>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     <img src="images/food.svg" width="76" height="72" alt="Эмблема дома">
+                    <h3 class="advantages-2-title">Еда</h3>
+                    <p class="advantages-2-p">Всегда заказывайте фирменный бургер, <br>
+                        вы не разочаруетесь!</p>
                 </li>
                 <li>
-                    <h3>Сувениры</h3>
-                    <p>Не только китайского, но и местного производства!</p>
                     <img src="images/present.svg" width="76" height="72" alt="Эмблема дома">
+                    <h3 class="advantages-2-title">Сувениры</h3>
+                    <p class="advantages-2-p">Не только китайского, но и местного <br>
+                        производства!</p>
                 </li>
             </ul>
         </section>
 
-        <section class="advantages#3">
+        <section class="advantages-3">
             <div>
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <img src="images/photo-2.jpg" width="800" height="256" alt="Фото города">
             </div>
-            <img src="images/photo-2.jpg" width="80" height="38" alt="Фото города">
+            <div class="advantages-3-title">
+                <h3>Там есть мост дьявола</h3>
+                <p class="advantages-3-p">- №2 -</p>
+                <p class="advantages-3-p">Да, по нему можно пройти! Если конечно <br>
+                    вы осмелитесь</p>
+            </div>
         </section>
 
-        <section class="advantages#4">
-            <ul>
+        <section  class="advantages#4">
+            <ul class="advantages-4">
                 <li>
-                    <h3>Небольшая площадь</h3>
-                    <p>№3</p>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <h3 class="advantages-4-title">Небольшая <br>
+                        площадь</h3>
+                    <p class="advantages-4-p">- №3 -</p>
+                    <p class="advantages-4-p">Все достопримечательности находятся очень близко</p>
                 </li>
                 <li>
-                    <h3>Красивая дорога</h3>
-                    <p>№4</p>
-                    <p>Ехать в Седону из Лас-вегаса совсем не скучно</p>
+                    <h3 class="advantages-4-title">Красивая <br>
+                        дорога</h3>
+                    <p class="advantages-4-p">- №4 -</p>
+                    <p class="advantages-4-p">Ехать в Седону из Лас-вегаса совсем не скучно</p>
                 </li>
                 <li>
-                    <h3>Мало туристов</h3>
-                    <p>№5</p>
-                    <p>Большинство едет в гранд каньон и толпится там</p>
+                    <h3  class="advantages-4-title">Мало <br>
+                        туристов</h3>
+                    <p class="advantages-4-p">- №5 -</p>
+                    <p class="advantages-4-p">Большинство едет в гранд каньон и толпится там</p>
                 </li>
             </ul>
         </section>
 
-        <section class="question-for-hotel">
-            <span>Заинтересовались?</span>
-            <p>Укажите предполагаемые даты поездки,
+        <section class="question-for-hotel promo">
+            <span class="promo-title">Заинтересовались?</span>
+            <p class="promo-remark">Укажите предполагаемые даты поездки,<br>
                 и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </section>
 
         <section class="look-for-hotel">
-            <h2><button>Поиск гостиницы в Седоне</button></h2>
+            <h2><button class="button">ПОИСК ГОСТИНИЦ В СЕДОНЕ</button></h2>
             <form action="https://echo.htmlacademy.ru">
                 <lable for="data-of-arrival">Дата заезда:</lable>
                 <input type="date" name="data-of-arrival">
@@ -107,7 +127,7 @@
                 <input type="number" name="amount-of-children" id="amount-of-children"
                        min="1" max="20" step="1" value="1">
                 <br><br>
-                <button type="submit">Найти</button>
+                <button class="button" type="submit">НАЙТИ</button>
             </form>
         </section>
 
@@ -117,7 +137,7 @@
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69735c04ee2f1c58d2d7b873a65336cf736d800da2403b8edf5761530be303bb&source=constructor"
                         style="border: 0;" width="1200" height="593" title="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона"></iframe>
             </p>
-            <button class="modal-close" type="button">Закрыть</button>
+            <button class="button modal-close" type="button">Закрыть</button>
         </section>
 
     </main>

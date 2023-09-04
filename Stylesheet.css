@@ -20,6 +20,10 @@ body {
     box-shadow: 0 0 20px 2px grey;
 }
 
+.main-hotels {
+    text-align: left;
+}
+
 a {
     text-decoration: none;
 }
@@ -121,6 +125,7 @@ a {
 .promo-title {
     font-size: 21px;
     line-height: 28px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -178,7 +183,6 @@ a {
     height: 330px;
     padding: 0;
     margin: 0;
-
 }
 
 .advantages-4{
@@ -195,7 +199,6 @@ a {
     height: 256px;
     padding: 0;
     margin: 0;
-
 }
 
 .advantages-2 li {
@@ -203,7 +206,6 @@ a {
     margin: 60px 59px 64px 60px;
 
 }
-
 
 .advantages-4 li {
     width: 400px;
@@ -218,4 +220,135 @@ a {
 
 .advantages-4-title {
     margin: 0;
+}
+
+.question-for-hotel {
+    width: 1200px;
+    height: 144px;
+    background-color: #ffffff;
+    padding-top: 58px;
+    padding-bottom: 0px;
+}
+
+.question {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.question-p {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+
+.look-for-hotel-button {
+    height: 89px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.look-for-hotel-button .button {
+    padding: 34px 147px;
+}
+
+.look-for-hotel-display {
+    width: 1200px;
+    height: 395px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.look-for-hotel-form {
+    width: 568px;
+    height: 395px;
+    background-color: #ffffff;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.data {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 50px 60px;
+    text-align: left;
+
+}
+
+.button-find-hotel {
+    font: inherit;
+    width: 458px;
+    height: 58px;
+
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #81b3d2;
+    border: none;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.button-find-hotel:hover,
+.button-find-hotel:focus {
+    background-color: #669ec0;
+}
+
+.button-find-hotel:active {
+    background-color: #5496bd;
+}
+
+.modal-map {
+    background-color: #ffffff;
+}
+
+footer {
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.visitsedona {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.visitsedona a {
+    color: #000000;
+}
+
+.footer-social {
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+
+.logo-htmlacademy {
+    color: #000000;
+}
+
+.logo-htmlacademy:hover,
+.logo-htmlacademy:focus {
+    background-color: #81b3d2;
+}
+
+.logo-htmlacademy:active {
+    background-color: #bdbbbc;
 }

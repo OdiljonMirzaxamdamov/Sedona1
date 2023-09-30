@@ -22,7 +22,7 @@ input[type="radio"].visually-hidden {
 
 
 .page {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
 
     margin: 0 auto;
     padding: 0;
@@ -108,15 +108,44 @@ a {
     justify-content: space-between;
 }
 
-.site-navigation {
+.site-navigation-left {
     list-style: none;
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
+
+    width: 312px;
+    text-align: left;
+    align-self: center;
+    padding-left: 73px;
 }
 
-.site-navigation a {
+.site-navigation-center {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    width: 576px;
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.site-navigation-center li {
+    align-self: center;
+}
+
+
+.site-navigation-right {
+    list-style: none;
+    width: 312px;
+
+    text-align: right;
+    align-self: center;
+    padding-right: 73px;
+}
+
+
+.site-navigation-left a,
+.site-navigation-center a,
+.site-navigation-right a {
     color: #000000;
 }
 
@@ -127,12 +156,6 @@ a {
 
 .main-navigation a:active {
     color: #b2b2b2;
-}
-
-.site-navigation li {
-    display: flex;
-    width: 240px;
-    justify-content: center;
 }
 
 .welcome-photo {
@@ -260,7 +283,7 @@ a {
 
 .question-for-hotel {
     width: 1200px;
-    height: 144px;
+    height: 210px;
     background-color: #ffffff;
     padding-top: 58px;
     padding-bottom: 0px;
@@ -279,23 +302,6 @@ a {
     margin-top: 35px;
 }
 
-
-
-
-
-/*Поиск гостиницы в основной странице*/
-
-
-.look-for-hotel {
-    position: absolute;
-    z-index: 1;
-}
-
-.modal-map {
-    position: relative;
-}
-
-
 .look-for-hotel-button {
     height: 89px;
     background-color: #ffffff;
@@ -305,16 +311,33 @@ a {
 }
 
 .look-for-hotel-button .button {
-    padding: 34px 147px;
+    padding: 34px 148px;
 }
 
-.look-for-hotel-display {
-    width: 1200px;
-    height: 395px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
+
+
+
+
+/*Поиск гостиницы в основной странице*/
+/*Модальные окна*/
+
+.modal-map {
+    position: relative;
+    background-color: #ffffff;
+}
+
+.modal-look-for-hotel {
+    /*display: none;*/
+
+    position: absolute;
+    margin-left: 316px;
+
+    z-index: 1;
+}
+
+.modal-map p {
+    padding: 0;
+    margin: 0;
 }
 
 .look-for-hotel-form {
@@ -322,7 +345,7 @@ a {
     height: 395px;
     background-color: #ffffff;
 
-    box-shadow: 0 0 20px 2px grey;
+    box-shadow: 0 10px 30px 0.5px #aeaeae;
 
     font-size: 14px;
     line-height: 26px;
@@ -443,14 +466,6 @@ a {
     background-color: #5496bd;
 }
 
-.modal-map {
-    background-color: #ffffff;
-}
-
-.modal-map p {
-    padding: 0;
-    margin: 0;
-}
 
 
 
@@ -569,21 +584,42 @@ footer {
 
 .filter-box {
     display: flex;
-    justify-content: space-evenly;
+}
 
-    width: 400px;
+.infrastructure {
+    width: 312px;
     height: 217px;
+    padding: 0 0 0 73px;
+    margin: 0;
+}
+
+.type-of-housing {
+    width: 312px;
+    height: 217px;
+    padding: 0 0 0 15px;
+    margin: 0;
 }
 
 .price-box {
     display: flex;
     flex-direction: column;
+    margin: 0 73px 0 0;
 
-    width: 400px;
+    width: 320px;
     height: 217px;
 
     align-items: center;
 }
+
+.cost-per-day {
+    margin: 0;
+    padding: 0;
+}
+
+.cost-per-day input {
+    width: 157px;
+}
+
 
 .price-result {
     position: relative;
@@ -605,17 +641,13 @@ footer {
 .price-from:after {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 4px;
     left: 155px;
 
     width: 2px;
-    height: 25px;
+    height: 23px;
 
     background-color: #ffffff;
-}
-
-.cost-per-day input {
-    width: 157px;
 }
 
 .filter legend {
@@ -626,6 +658,7 @@ footer {
     box-sizing: border-box;
     width: 136px;
     height: 36px;
+    margin: 15px;
 
     background-color: transparent;
     border: 2px solid #ffffff;
@@ -732,6 +765,8 @@ footer {
 }
 
 .found {
+    display: block;
+    padding: 0 0 0 73px;
     width: 200px;
     text-align: center;
 }
@@ -780,7 +815,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    margin-right: 60px;
+    margin-right: 73px;
 }
 
 .button-up {
@@ -816,6 +851,10 @@ footer {
     fill: #81b3d2;
 }
 
+/*.big-small button[type="button"]:focus + .big-small .button-up svg path {*/
+/*    fill: #000000;*/
+/*}*/
+
 
 .button-down .visited path {
     fill: #81b3d2;
@@ -843,13 +882,14 @@ footer {
     width: 500px;
     height: 150px;
     display: flex;
-    justify-content: space-around;
+
 }
 
 .results-block-left-photo {
-    width: 200px;
-    padding-top: 27px;
-    padding-left: 40px;
+    width: 238px;
+
+    align-self: center;
+    padding: 0 0 0 73px;
 }
 
 .button-block {
@@ -928,7 +968,7 @@ footer {
 
     width: 400px;
     height: 150px;
-    margin-right: 60px;
+    margin-right: 73px;
 
     align-items: flex-end;
     justify-content: space-evenly;
@@ -948,4 +988,5 @@ footer {
 
     background-color: #f2f2f2;
 }
+
 

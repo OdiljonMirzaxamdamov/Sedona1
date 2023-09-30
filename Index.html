@@ -12,21 +12,27 @@
 <div class="page">
     <header>
         <nav class="main-navigation">
-            <ul class="site-navigation left">
-                <li class="info"><a href="info.html">Информация</a></li>
+            <div class="site-navigation-left">
+                <a class="info" href="info.html">Информация</a>
+            </div>
+
+            <ul class="site-navigation-center">
                 <li><a href="gallery.html">Фото и видео</a></li>
-            </ul>
-            <a class="navigation-logo" href="Index.html">
-                <img src="images/header/logo.svg" width="138" height="70" alt="Герб Седона">
-            </a>
-            <ul class="site-navigation right">
+                <a class="navigation-logo" href="Index.html">
+                    <img src="images/header/logo.svg" width="138" height="70" alt="Герб Седона"></a>
+
                 <li><a href="map.html">Карта штата</a></li>
-                <li class="hotels"><a href="Hotels.html">Гостиницы</a></li>
             </ul>
+
+            <div class="site-navigation-right">
+               <a class="hotels" href="Hotels.html">Гостиницы</a>
+            </div>
         </nav>
+
         <div class="welcome-photo">
             <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         </div>
+
     </header>
 
     <main>
@@ -119,8 +125,7 @@
         </div>
 
         <div>
-        <section class="look-for-hotel">
-            <div class="look-for-hotel-display">
+            <section class="modal-look-for-hotel">
                 <form class="look-for-hotel-form" action="https://echo.htmlacademy.ru">
 
                     <div class="data">
@@ -159,16 +164,17 @@
                     <button class="button-find-hotel" type="submit">НАЙТИ</button>
 
                 </form>
-            </div>
-        </section>
+            </section>
 
-        <section class="modal modal-map"> <!--Карта-адрес-->
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <p>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69735c04ee2f1c58d2d7b873a65336cf736d800da2403b8edf5761530be303bb&source=constructor"
-                        style="border: 0;" width="1200" height="593" title="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона"></iframe>
-            </p>
-        </section>
+            <section class="modal-map"> <!--Карта-адрес-->
+                <h2 class="visually-hidden">Как до нас добраться</h2>
+                <p>
+                    <!--            <img src="images/map.jpg" alt="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона">-->
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A69735c04ee2f1c58d2d7b873a65336cf736d800da2403b8edf5761530be303bb&source=constructor"
+                            style="border: 0;" width="1200" height="593" title="Соединённые Штаты Америки, штат Аризона, Коконино-Каунти, Седона"></iframe>
+                </p>
+            </section>
+        </div>
 
         <footer class="footer main-footer">
             <div class="visitsedona">
@@ -242,7 +248,8 @@
                 </a>
             </div>
         </footer>
-        </div>
+
+
 
     </main>
 

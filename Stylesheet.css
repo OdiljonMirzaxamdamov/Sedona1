@@ -321,23 +321,58 @@ a {
 /*Поиск гостиницы в основной странице*/
 /*Модальные окна*/
 
+@keyframes bounce {
+    0% {transform: translateY(0px)}
+    70% {transform: translateY(30px)}
+    90% {transform: translateY(-10px)}
+    100% {transform: translateY(0px)}
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0px)}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)}
+    20%, 40%, 60%, 80% {transform: translateX(10px)}
+}
+
 .modal-map {
     position: relative;
     background-color: #ffffff;
 }
 
 .modal-look-for-hotel {
-    /*display: none;*/
+    display: none;
 
     position: absolute;
     margin-left: 316px;
 
-    z-index: 1;
+    z-index: 3;
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
+}
+
+.modal-error {
+    animation: shake 0.6s;
 }
 
 .modal-map p {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
     padding: 0;
     margin: 0;
+}
+
+.modal-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .look-for-hotel-form {
@@ -396,7 +431,7 @@ a {
     position: absolute;
 
     margin-top: 10px;
-    margin-left: 420px;
+    margin-left: 410px;
 }
 
 
